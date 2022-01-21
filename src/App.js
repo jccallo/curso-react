@@ -16,6 +16,9 @@ import RenderizadoCondicional from './components/RenderizadoCondicional'
 // importamos componente RenderizadoElementos
 import RenderizadoElementos from './components/RenderizadoElementos'
 
+// importamos componente EventosES6 y EventosES7
+import { EventosES6, EventosES7 } from './components/Eventos';
+
 function App() {
     return (
         <div className="App">
@@ -69,6 +72,12 @@ function App() {
 
                 {/* agregamos componente RenderizadoElementos */}
                 <RenderizadoElementos />
+
+                <hr />
+
+                {/* agregamos componente EventosES6 y EventosES7 */}
+                <EventosES6 />
+                <EventosES7 />
 
             </section>
 
