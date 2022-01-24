@@ -84,3 +84,30 @@ export class EventosES7 extends Component {
         )
     }
 }
+
+export class MasSobreEventos extends Component {
+    handleClick = (e, mensaje) => {
+        console.log(e) // evento sintetico de react
+        console.log(e.nativeEvent) // evento nativo de javascript
+        console.log(e.target)
+        console.log(e.nativeEvent.target)
+        console.log(mensaje)
+    }
+
+    render() {
+        return (
+            <div>
+                <h2>Mas sobre eventos</h2>
+                {/* eventos de react son para las etiquetas jsx mas no para componentes */}
+                <button onClick={(e) => this.handleClick(e, "Pasando parametro desde un elemento")}>Saludar</button>
+                {/* esto es un evento pesonalizado, porque se le pasa una prop con la definicion de una funcion */}
+                <Boton myOnClick={(e)=> this.handleClick(e, "Pasando parametro desde un elemento")} />
+            </div>
+        )
+    }
+}
+
+function Boton(props) {
+    // la etiqueta jsx button se le pasa el evento onClick con props.myOnClick
+    return <button onClick={props.myOnClick}>Boton hecho componente</button>
+}

@@ -17,7 +17,7 @@ import RenderizadoCondicional from './components/RenderizadoCondicional'
 import RenderizadoElementos from './components/RenderizadoElementos'
 
 // importamos componente EventosES6 y EventosES7
-import { EventosES6, EventosES7 } from './components/Eventos';
+import { EventosES6, EventosES7, MasSobreEventos } from './components/Eventos';
 
 function App() {
     return (
@@ -78,6 +78,7 @@ function App() {
                 {/* agregamos componente EventosES6 y EventosES7 */}
                 <EventosES6 />
                 <EventosES7 />
+                <MasSobreEventos />
 
             </section>
 
