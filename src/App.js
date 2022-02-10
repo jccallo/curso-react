@@ -19,6 +19,12 @@ import RenderizadoElementos from './components/RenderizadoElementos'
 // importamos componente EventosES6 y EventosES7
 import { EventosES6, EventosES7, MasSobreEventos } from './components/Eventos';
 
+// importamos componente ComunicacionComponentes
+import ComunicacionComponentes from "./components/ComunicacionComponentes"
+
+// importamos componente CicloVida
+import CicloVida from './components/CicloVida';
+
 function App() {
     return (
         <div className="App">
@@ -79,6 +85,16 @@ function App() {
                 <EventosES6 />
                 <EventosES7 />
                 <MasSobreEventos />
+
+                <hr />
+
+                {/* agregamos componente ComunicacionComponentes */}
+                <ComunicacionComponentes />
+                
+                <hr />
+
+                {/* agregamos componente CicloVida */}
+                <CicloVida />
 
             </section>
 
